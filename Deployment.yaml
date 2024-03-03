@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: good-buy-deployment
+  labels:
+    app: good-buy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: good-buy
+  template:
+    metadata:
+      labels:
+        app: good-buy
+    spec:
+      containers:
+      - name: good-buy
+        image: kandwalshantanu/good-buy:0.0.1.RELEASE
+        ports:
+        - containerPort: 3000
