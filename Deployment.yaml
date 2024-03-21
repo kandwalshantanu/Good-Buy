@@ -19,3 +19,18 @@ spec:
         image: kandwalshantanu/good-buy:0.0.1.RELEASE
         ports:
         - containerPort: 3000
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: good-buy-service
+  labels:
+    app: good-buy
+spec:
+  type: NodePort
+  ports:
+  - port: 3000
+    targetPort: 3000
+    nodePort: 31000
+  selector:
+    app: good-buy
