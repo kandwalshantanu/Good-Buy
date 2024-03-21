@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: good-buy
-        image: kandwalshantanu/good-buy:0.0.1.RELEASE
+        image: kandwalshantanu/goodbuy:0.0.4.RELEASE
         ports:
         - containerPort: 3000
 
