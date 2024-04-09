@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: birdsquawk
-          image: equationalapplications/birdsquawk
+          image: kandwalshantanu/birdservice
 ---
 apiVersion: v1
 kind: Service
