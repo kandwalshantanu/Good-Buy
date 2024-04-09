@@ -1,0 +1,5 @@
+https://www.npmjs.com/package/typescript
+
+https://hub.docker.com/_/mongo
+
+https://hub.docker.com/_/node
